@@ -26,3 +26,22 @@ app.factory('calculateFactory', ['$log', function($log){
 // 		return parseInt(a) + parseInt(b);
 // 	}
 // }]);
+
+
+// app.provider('calculateServiceNew', function(){
+// 	this.config = function(){
+// 		// write any code
+// 	}
+
+// 	this.$get = ['$log', function($log){
+// 		var calService = {};
+// 		calService.getSum = function(a, b){
+// 			return parseInt(a) + parseInt(b);
+// 		}
+// 		return calService;
+// 	}]
+// });
+
+// app.config(['calculateServiceNew', function(calculateServiceNew){
+// 	calculateServiceNew.config();
+// }]);
