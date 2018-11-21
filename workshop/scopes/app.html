@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+   <head>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+      <script src = "./config.js"></script>
+   </head>
+
+   <body ng-app = "myapp">
+      <div ng-controller="OuterController">
+         Outer controller :: {{name}}
+         <br /><br /><br /><br /><br />
+         Inner Controller
+         <div ng-controller="InnerController">
+            Inner Controller :: {{name}}
+            <br />
+            Value is :: {{value}}
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+   <head>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+      <script src = "./config.js"></script>
+   </head>
+
+   <body ng-app = "myapp">
+      <div ng-controller="AnyController">
+         <div ng-if="ifValue">
+            Show Angular if block
+         </div>
+         <br />
+         <div ng-show="show">
+            Show Angular show block
+         </div>
+         <br />
+         <div ng-hide="show">
+            Show Angular hide block
+         </div>
+
+         <br />
+         <li ng-repeat = "country in countries">
+            Country:  {{country.name | uppercase}}
+            Locale:   {{country.locale}}
+            Sal: {{country.sal | number: 2}}
+            Sal: {{country.sal | currency: "$": 1}}
+         </li>
+
+         <br /><br /><br /><br />
+         With Filter
+         <li ng-repeat = "country in countries | filter: {name: 'First'}">
+            Country:  {{country.name | uppercase}}
+            Locale:   {{country.locale}}
+            Sal: {{country.sal | number: 2}}
+            Sal: {{country.sal | currency: "$": 1}}
+         </li>
+         <br />
+      </div>
+   </body>
+</html>

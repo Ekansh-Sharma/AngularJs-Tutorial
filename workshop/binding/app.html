@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+   <head>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+      <script src = "./config.js"></script>
+   </head>
+
+   <body ng-app = "myapp">
+      <div ng-controller="BindingController">
+         <input type="text" ng-model="twoWay"/>
+         <br />
+         Two Way binding {{twoWay}}
+         <br />
+         <span ng-bind="oneWay"></span>
+         <br />
+         this is {{oneWay}}
+         <br />
+         One time binding {{::twoWay}}
+      </div>
+   </body>
+</html>

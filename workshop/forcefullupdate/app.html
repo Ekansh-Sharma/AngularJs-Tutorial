@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <head>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+      <script src = "./config.js"></script>
+   </head>
+
+   <body ng-app = "myapp">
+      <div ng-controller="BindingController">
+         First :: {{first}}
+         <br />
+         Second :: {{second}}
+         <br />
+         <div id="sum">
+            Sum :: {{res}}
+         </div>
+         <button ng-click="sum()"></button>
+         <button ng-click="forceFully()"></button>
+         <br />
+      </div>
+   </body>
+</html>
