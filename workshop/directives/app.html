@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+   <head>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+      <script src = "./config.js"></script>
+   </head>
+
+   <body ng-app = "myapp">
+      <div ng-controller="directiveController">
+         <div custom-directive></div>
+      </div>
+
+
+      <script type="text/ng-template" id="info-msg.html">
+         <strong>{{name}}</strong>
+      </script>
+   </body>
+
+</html>
