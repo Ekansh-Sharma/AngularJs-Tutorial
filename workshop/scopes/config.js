@@ -1,13 +1,13 @@
 var app = angular.module("myapp", []);
 
 app.controller('OuterController', ['$scope', function($scope){
-	$scope.name = "Outer Controller Ekansh Sharma";
+	$scope.name = "Outer Controller Compounder";
 	$scope.value = "Outer controller value";
 }]);
 
 
 app.controller('InnerController', ['$scope', function($scope){
-	$scope.name = "Inner Controller Ekansh Sharme";
+	$scope.name = "Inner Controller Compounder";
 });
 
 
@@ -21,11 +21,11 @@ app.controller('InnerController', ['$scope', function($scope){
 // }]);
 
 // app.controller('OuterController', ['$scope', function($scope){
-// 	$scope.name = "Outer Controller Ekansh Sharma";
+// 	$scope.name = "Outer Controller Compounder";
 // 	$scope.value = "Outer controller value";
 // }]);
 
 
 // app.controller('InnerController', ['$scope', function($scope){
-// 	$scope.name = "Inner Controller Ekansh Sharme";
+// 	$scope.name = "Inner Controller Compounder";
 // });
