@@ -1,4 +1,4 @@
-Compoundervar app = angular.module("myapp", []);
+var app = angular.module("myapp", []);
 
 app.controller('OuterController', ['$scope', function($scope){
 	$scope.name = "Outer Controller Compounder";
